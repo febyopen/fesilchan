@@ -1,0 +1,19 @@
+<ng-container *ngIf="carouselCards && carouselCards.length > 0">
+    <div class="carousel-container relative  w-80 rounded-2xl">
+        <div class="h-40 py-6 px-5 text-center hidden relative" *ngFor="let card of carouselCards; let i = index"
+            [ngClass]="{'card-active':selectedIndex == i}">
+            <div class="text-sm px-2.5 flex justify-center">{{card.header}} <span class="new-badge">new</span></div>
+            <div class="text-xs text-default-500 mt-1.5">{{card.description}}</div>
+            <div *ngIf="!controls"
+                class="btn-corousel absolute flex justify-between w-full left-0 top-0 items-center h-full">
+                <mat-icon (click)="onPrevClick()">keyboard_arrow_left</mat-icon>
+                <mat-icon (click)="onNextClick()">keyboard_arrow_right</mat-icon>
+            </div>
+            <div *ngIf="!indicators" class="carousel-dots absolute bottom-4 left-0 right-0 p-2.5 text-center">
+                <span *ngFor="let dot of carouselCards; let i=index"
+                    class="carousel-dot inline-block my-0 rounded-full z-10 cursor-pointer bg-gray-200"
+                    [ngClass]="{'active': selectedIndex === i}" (click)="selectCard(i)"></span>
+            </div>
+        </div>
+    </div>
+</ng-container>

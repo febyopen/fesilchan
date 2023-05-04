@@ -1,0 +1,21 @@
+.body-wrapper {
+    min-height: calc(100vh - 70px);
+    padding-left: 0;
+    padding-right: 0;
+    width: calc(100% - 144px);
+    transition: width .25s ease,margin .25s ease;
+}
+.main-panel {
+    transition: width .25s ease,margin .25s ease;
+    width: 100%;
+    max-height: calc(100vh - 70px);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
+}
+.content-wrapper {
+    padding: 1.875rem 1.75rem;
+    width: 100%;
+    flex-grow: 1;
+}

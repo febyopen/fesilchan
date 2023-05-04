@@ -1,0 +1,9 @@
+<div *ngFor="let message of messages">
+      {{ message.text }}
+    </div>
+    <div class="bg-slate-300 p-4 shadow-sm">
+        <input class="shadow-sm" [(ngModel)]="inputText" >
+    <button (click)="send()">send</button>
+
+    </div>
+    

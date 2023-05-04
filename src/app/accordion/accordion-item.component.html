@@ -1,0 +1,16 @@
+<div class="acc-header flex justify-between cursor-pointer border-b p-2" (click)="toggle()">
+    <div class="headerTitle w-full overflow-auto font-medium ">
+        {{title}}
+    </div>
+    <div class="flex" [@rotatedState]="!showBody? 'default':'rotated'">
+        <mat-icon class="mat-18">expand_more</mat-icon>
+    </div>
+    <!-- <div>
+        <mat-icon class="mat-18 transform transition-all" [class.rotate-180]="showBody">expand_more</mat-icon>
+    </div> -->
+</div>
+<div [@smoothCollapse]="!showBody? 'initial':'final'">
+    <div class="acc-body flex h-10 items-center leading-3 p-2 border-b ">
+        <ng-content></ng-content>
+    </div>
+</div>

@@ -1,0 +1,86 @@
+<!-- <button mat-raised-button color="primary"  (click)="addNew()">
+  Add New <i class="material-icons">add_circle_outline</i>
+</button> -->
+<div class="flex justify-between items-center max-w-md ">
+  <!-- <ul class="cursor" cdkDropList (cdkDropListDropped)="drop($event)">
+    <li *ngFor="let item of list" cdkDrag (cdkDragMoved)="onDragMove(item, $event)">
+      <span>{{ item.name }} {{item.id}}</span>
+    </li>
+   
+  </ul>
+  <div *ngIf="dragValue>50">delete</div> -->
+
+<ul class="max-w-md divide-y divide-gray-200 cursor-pointer" cdkDropList (cdkDropListDropped)="drop($event)">
+  <li class="pb-3 sm:pb-4"  *ngFor="let item of list"  cdkDrag (cdkDragEnded)="onDragEnded(item, $event)" (cdkDragMoved)="onDragMove($event)">
+     <div class="flex items-center space-x-4 bg-white">
+        <div class="flex-shrink-0">
+           <img class="w-8 h-8 rounded-full" src={{item.image}} alt="Neil image">
+        </div>
+        <div class="flex-1 min-w-0">
+           <p class="text-sm font-medium text-gray-900 truncate ">
+            {{ item.name }} 
+           </p>
+           <p class="text-sm text-gray-500 truncate ">
+            {{ item.email }} 
+           </p>
+        </div>
+        <div class="inline-flex items-center text-base font-semibold text-gray-900 ">
+          {{ item.price }} 
+        </div>
+     </div>
+
+  </li>
+</ul>
+
+<div class="flex" *ngIf="isDrag">
+	<span class="trash">
+    <span></span>
+    <i></i>
+  </span>
+</div>
+</div>
+  <div class="container max-w-3xl ">
+    <div class="flex justify-between text-center" >
+        <div class="p-4 w-full ">
+          <div class="font-bold p-2 bg-orange-400  rounded-t-md">Still Doing</div>
+          <div class="">
+          <mat-form-field class="w-full" >
+            <input matInput type="text" [formControl]="todolist" placeholder="Add Todo" (keyup.enter)="addTodo(); todolist.setValue('')">
+            <button *ngIf="todolist.value" [disabled]=""  matSuffix mat-icon-button aria-label="Clear" (click)="addTodo()">
+              <mat-icon class="shadow-sm text-red-800">add box icon</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+          <div cdkDropList #pendingList="cdkDropList" [cdkDropListData]="todo"
+            [cdkDropListConnectedTo]="[doneList,reviewList]" class="bg-slate-50" (cdkDropListDropped)="dropList($event)">
+            <div class="cursor-pointer shadow-sm p-2" *ngFor="let item of todo" cdkDragLockAxis="x" cdkDrag>{{item}}
+              <!-- <button [disabled]=""  matSuffix mat-icon-button aria-label="Clear" (click)="edit($event)">
+                <span class="shadow-sm text-red-800">edit</span>
+              </button> -->
+            </div>
+            <div class="shadow-sm p-2  opacity-5" *ngIf="todo.length === 0">empty list</div>
+          </div>
+
+      </div>
+      <div class="p-4 w-full">
+
+          <div class="font-bold p-2 bg-green-600 rounded-t-md">Done</div>
+  
+          <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="done"
+            [cdkDropListConnectedTo]="[pendingList,reviewList]" class="bg-slate-50" (cdkDropListDropped)="dropList($event)">
+            <div class="cursor-pointer shadow-sm p-2" *ngFor="let item of done" cdkDrag>{{item}}</div>
+            <div class="shadow-sm p-2  opacity-5" *ngIf="done.length === 0">empty list</div>
+          </div>
+        </div>
+
+        <div class="p-4 w-full ">
+          <div class="font-bold p-2 bg-red-400 rounded-t-md">Nevermind</div>
+  
+          <div cdkDropList #reviewList="cdkDropList" [cdkDropListData]="review"
+            [cdkDropListConnectedTo]="[doneList,pendingList]" class="bg-slate-50" (cdkDropListDropped)="dropList($event)">
+            <div class="cursor-pointer shadow-sm p-2" *ngFor="let item of review" cdkDrag>{{item}}</div>
+            <div class="shadow-sm p-2 opacity-5" *ngIf="review.length === 0">empty list</div>
+          </div>
+        </div>
+      </div>
+    </div>

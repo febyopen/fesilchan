@@ -1,0 +1,33 @@
+<h1 class="font-bold">Components</h1>
+<h3 class="mb-3">1. Carousel</h3>
+  <app-carousel></app-carousel>
+  <h3 class="mb-3">2. Accordion</h3>
+  <div class="card m-12 max-w-lg">
+      <app-accordion>
+          <app-accordion-item title="one">
+              sub content
+          </app-accordion-item>
+          <app-accordion-item title="two">
+              sub content
+          </app-accordion-item>
+      </app-accordion>
+  </div>
+  <h3 class="mb-3">3.Drag and Drop</h3>
+  <div class="card m-12 ">
+      <app-drag-and-drop></app-drag-and-drop>
+  </div>
+  <div>
+
+      <h1>3.Sticky area</h1>
+      <app-text-area></app-text-area>
+      <button (click)="delete()">clear</button>
+      <ng-template #StickyNoteTemplate></ng-template>
+      
+  </div>
+  <h1>4.chat bot</h1>
+  <app-chat-bot></app-chat-bot>
+
+  <div >
+      <h1>5.Button animate</h1>
+<app-custom-button ></app-custom-button>
+  </div>

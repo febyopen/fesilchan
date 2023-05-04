@@ -1,0 +1,79 @@
+.list {
+  background-color: #E2E4E6;
+  width: 272px;
+  margin: 0 4px;
+  height: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  float: left;
+  min-height: 76px;
+  border-radius: 3px;
+}
+
+.list-header {
+  color: #333;
+  font-family: Helvetica;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  margin: 8px;
+}
+
+.header-button {
+float: left;
+cursor: default;
+font-size: 18px;
+font-weight: 700;
+line-height: 32px;
+padding-left: 4px;
+text-decoration: none;
+min-height: 40px;
+}
+
+.new-list-button {
+  background-color: #2A6AA3;
+  width: 272px;
+  margin: 0 4px;
+  height: 100%;
+  color: #C0D3E4;
+  font-size: 14px;
+  text-align: left;
+  float: right;
+  position: relative;
+  left: 40px;
+  bottom: 200px;
+}
+
+.new-card-button {
+  background-color: #E2E4E6;
+  width: 268px;
+  margin: 0 4px;
+  height: 100%;
+  color: #8C8C8C;
+  font-size: 14px;
+  text-align: left;
+}
+
+.list-card {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 #ccc;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 8px;
+    min-width: 256px;
+    min-height: 32px;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+    position: relative;
+    right: 32px;
+  }
+
+li {
+  font-family: Helvetica;
+  font-size: 14px;
+  padding: 4px;
+}

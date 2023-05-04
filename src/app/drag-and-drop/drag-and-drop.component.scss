@@ -1,0 +1,42 @@
+.trash {
+    @apply w-[66px] h-20 inline-block relative mx-auto my-0 rounded-br-md rounded-bl-md;
+    background: #ff6873;
+  }
+  .trash span {
+    @apply absolute h-3 top-[-19px] rotate-0 transition-transform duration-[250ms] origin-[19%_100%] rounded-t-[10px] -inset-x-2.5 after:content-[''] after:absolute after:w-[27px] after:h-[7px] after:rotate-0 after:transition-transform after:duration-[250ms] after:origin-[19%_100%] after:rounded-t-[10px] after:left-[27px] after:-top-2.5;
+    background: #ff6873;
+  }
+  .trash span:after {
+    background: #ff6873;
+  }
+  .trash i {
+    @apply relative w-[5px] h-[50px] block mx-auto my-3.5 rounded-[5px] after:content-[''] after:w-[5px] after:h-[50px] after:absolute after:left-[-18px] after:rounded-[5px] before:content-[''] before:w-[5px] before:h-[50px] before:absolute before:right-[-18px] before:rounded-[5px];
+    background: #fff;
+  }
+  .trash i:after {
+    background: #fff;
+  }
+  .trash i:before {
+    background: #fff;
+  }
+  .trash:hover{
+    @apply animate-bounce;
+  }
+  .trash:hover span {
+    @apply -rotate-45 transition-transform duration-[250ms] ;
+  }
+  
+  /* Animate items as they're being sorted. */
+.cdk-drop-list-dragging .cdk-drag {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+
+}
+
+/* Animate an item that has been dropped. */
+.cdk-drag-animating {
+  transition: transform 300ms cubic-bezier(0, 0, 0.2, 1);
+  @apply -rotate-45 transition-transform duration-[250ms] ;
+   
+}
+
+  
