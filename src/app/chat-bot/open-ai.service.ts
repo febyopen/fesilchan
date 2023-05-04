@@ -6,7 +6,7 @@ import { Configuration, OpenAIApi } from 'openai';
 export class OpenAiService {
   private openai: OpenAIApi;
   configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "Apikey",
   });
   constructor() {
     this.openai = new OpenAIApi(this.configuration);

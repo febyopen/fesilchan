@@ -19,6 +19,8 @@ import { ChatBotModule } from './chat-bot/chat-bot.module';
 import { CustomButtonComponent } from './custom-button/custom-button.component';
 import { CustomButtonModule } from './custom-button/custom-button.module';
 import { ButtonClickDirective } from './shared/directives/button-click.directive';
+import { MenuCardComponent } from './menu-card/menu-card.component';
+import { MenuCardModule } from './menu-card/menu-card.module';
 
 @NgModule({
     declarations: [
@@ -29,6 +31,7 @@ import { ButtonClickDirective } from './shared/directives/button-click.directive
         SpinnerComponent,
         NavbarComponent,
         CustomComponentsComponent,
+
      
     ],
     providers: [],
@@ -43,7 +46,8 @@ import { ButtonClickDirective } from './shared/directives/button-click.directive
         StickyNoteModule,
         ChatBotModule,
         DragAndDropModule,
-        CustomButtonModule
+        CustomButtonModule,
+        MenuCardModule
 
     ]
 })
