@@ -22,6 +22,7 @@ import { ButtonClickDirective } from './shared/directives/button-click.directive
 import { MenuCardComponent } from './menu-card/menu-card.component';
 import { MenuCardModule } from './menu-card/menu-card.module';
 
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -47,7 +48,7 @@ import { MenuCardModule } from './menu-card/menu-card.module';
         ChatBotModule,
         DragAndDropModule,
         CustomButtonModule,
-        MenuCardModule
+        MenuCardModule,
 
     ]
 })

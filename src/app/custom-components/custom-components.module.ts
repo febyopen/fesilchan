@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { CustomComponentsRoutingModule } from './custom-components-routing.module';
 
 import { CarouselModule } from '../carousels/carousel.module';
+// import { FlipBookModule } from '@labsforge/flipbook';
 
 
 
@@ -12,7 +13,8 @@ import { CarouselModule } from '../carousels/carousel.module';
   imports: [
     CommonModule,
     CustomComponentsRoutingModule,
-    CarouselModule
+    CarouselModule,
+
   ],
   exports:[]
 })
