@@ -21,6 +21,9 @@ import { CustomButtonModule } from './custom-button/custom-button.module';
 import { ButtonClickDirective } from './shared/directives/button-click.directive';
 import { MenuCardComponent } from './menu-card/menu-card.component';
 import { MenuCardModule } from './menu-card/menu-card.module';
+import { TrelloComponent } from './trello/trello.component';
+import { TrelloModule } from './trello/trello.module';
+
 
 @NgModule({
     declarations: [
@@ -31,6 +34,7 @@ import { MenuCardModule } from './menu-card/menu-card.module';
         SpinnerComponent,
         NavbarComponent,
         CustomComponentsComponent,
+     
 
      
     ],
@@ -47,7 +51,8 @@ import { MenuCardModule } from './menu-card/menu-card.module';
         ChatBotModule,
         DragAndDropModule,
         CustomButtonModule,
-        MenuCardModule
+        MenuCardModule,
+        TrelloModule
 
     ]
 })
