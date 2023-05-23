@@ -18,11 +18,12 @@ import { StickyNoteModule } from './sticky-note/sticky-note.module';
 import { ChatBotModule } from './chat-bot/chat-bot.module';
 import { CustomButtonComponent } from './custom-button/custom-button.component';
 import { CustomButtonModule } from './custom-button/custom-button.module';
-import { ButtonClickDirective } from './shared/directives/button-click.directive';
-import { MenuCardComponent } from './menu-card/menu-card.component';
+
 import { MenuCardModule } from './menu-card/menu-card.module';
-import { TrelloComponent } from './trello/trello.component';
+
 import { TrelloModule } from './trello/trello.module';
+import { ToggleButtonModule } from './toggle-button/toggle-button.module';
+
 
 
 @NgModule({
@@ -34,6 +35,7 @@ import { TrelloModule } from './trello/trello.module';
         SpinnerComponent,
         NavbarComponent,
         CustomComponentsComponent,
+        
      
 
      
@@ -52,7 +54,8 @@ import { TrelloModule } from './trello/trello.module';
         DragAndDropModule,
         CustomButtonModule,
         MenuCardModule,
-        TrelloModule
+        TrelloModule,
+        ToggleButtonModule
 
     ]
 })

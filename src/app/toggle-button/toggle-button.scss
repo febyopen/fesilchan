@@ -1,0 +1,28 @@
+.toggle-btn {
+   @apply inline-block outline-none relative cursor-pointer select-none bg-gray-300 p-0 w-9 h-6 rounded-3xl border;
+  }
+  .toggle-btn:focus::after,
+  .toggle-btn:active::after {
+  @apply shadow-sm;
+  }
+  .toggle-btn::after {
+   @apply  left-0 relative block w-2/3 h-full rounded-xl transition-all  bg-slate-100 shadow-sm ;
+    content: '';
+  }
+  .toggle-btn.toggle-btn-on::after {
+ @apply left-2/4;
+  }
+  .toggle-btn.toggle-btn-on {
+   @apply bg-green-400;
+  }
+  .toggle-btn.toggle-btn-on:active {
+@apply shadow-none
+  }
+  .toggle-btn.toggle-btn-on:active::after {
+@apply -ml-2
+  }
+  .toggle-btn:active::after {
+  @apply p-3;
+  }
+
+  
