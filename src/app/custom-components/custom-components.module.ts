@@ -14,6 +14,7 @@ import { CarouselModule } from '../carousels/carousel.module';
     CommonModule,
     CustomComponentsRoutingModule,
     CarouselModule,
+    
 
   ],
   exports:[]
