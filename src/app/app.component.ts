@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fesilchan';
-
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent) {
+    event.preventDefault();
+  }
   showSidebar: boolean = true;
   showNavbar: boolean = true;
   showFooter: boolean = true;
   showSettings: boolean = true;
   isLoading?: boolean;
+
+  
 }

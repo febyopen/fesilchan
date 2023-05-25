@@ -9,6 +9,9 @@ const routes: Routes = [
     { path: 'components', loadChildren: () => import('./custom-components/custom-components.module').then(m => m.CustomComponentsModule) },
     {
       path: 'trello', loadChildren: () => import('./trello/trello.module').then(m=>m.TrelloModule)
+    },
+    {
+      path: 'tower-block', loadChildren: () => import('./tower-block/tower-block.module').then(m=>m.TowerBlockModule)
     }
    
 ];

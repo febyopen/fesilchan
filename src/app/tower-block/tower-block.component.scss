@@ -1,0 +1,27 @@
+.gameover {
+    @apply w-full h-full z-10 absolute flex items-center justify-center  ;
+    background-color: rgba(0, 0, 0, 0.383)
+}
+.gameover__text {
+ @apply text-white bg-black p-4 rounded-sm;
+}
+.score {
+@apply  top-5;
+}
+.gamezone{
+    width: calc(100% - 75px);
+}
+canvas
+{
+    height: 80vh;
+    background-color: black;
+    background-image: linear-gradient(to bottom, black, #003f59);
+    cursor: pointer;
+    max-width: 100%;
+    min-width: 400px;
+    text-align: center;
+    margin: auto;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

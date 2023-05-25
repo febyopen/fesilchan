@@ -1,0 +1,21 @@
+<div class="relative game-area">
+    <div *ngIf="!gameStarted" class="absolute flex items-center justify-center w-full h-full ">
+  <h1 class="bg-green-700 p-3 rounded-sm">Press Space to start</h1>
+</div>
+<div *ngIf="gameOver" class="gameover">
+    <div class="gameover__text">
+        <h1>Game Over!</h1>
+        <h4>Score: {{stack.length-2}}</h4>
+        <h4>Current High Score: {{highScore}}</h4>
+        <br>
+        <div (click)="restart($event)" style="cursor: pointer;">
+            <h3>Press space to play again</h3>
+        </div>
+    </div>
+</div>
+<div *ngIf="!gameOver" class="score">
+    <h2>Score: {{stack.length-2}}</h2>
+</div>
+<div class="gamezone"> </div>
+<div id='mountain-target'></div>
+</div>

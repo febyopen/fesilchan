@@ -23,6 +23,7 @@ import { MenuCardModule } from './menu-card/menu-card.module';
 
 import { TrelloModule } from './trello/trello.module';
 import { ToggleButtonModule } from './toggle-button/toggle-button.module';
+import { TowerBlockComponent } from './tower-block/tower-block.component';
 
 
 
@@ -35,6 +36,7 @@ import { ToggleButtonModule } from './toggle-button/toggle-button.module';
         SpinnerComponent,
         NavbarComponent,
         CustomComponentsComponent,
+        TowerBlockComponent,
         
      
 
