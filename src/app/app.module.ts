@@ -24,6 +24,9 @@ import { MenuCardModule } from './menu-card/menu-card.module';
 import { TrelloModule } from './trello/trello.module';
 import { ToggleButtonModule } from './toggle-button/toggle-button.module';
 import { TowerBlockComponent } from './tower-block/tower-block.component';
+import { ChartJsComponent } from './chart-js/chart-js.component';
+import { ChartJsModule } from './chart-js/chart-js.module';
+import { TowerBlockModule } from './tower-block/tower-block.module';
 
 
 
@@ -36,7 +39,6 @@ import { TowerBlockComponent } from './tower-block/tower-block.component';
         SpinnerComponent,
         NavbarComponent,
         CustomComponentsComponent,
-        TowerBlockComponent,
         
      
 
@@ -57,7 +59,9 @@ import { TowerBlockComponent } from './tower-block/tower-block.component';
         CustomButtonModule,
         MenuCardModule,
         TrelloModule,
-        ToggleButtonModule
+        ToggleButtonModule,
+        ChartJsModule,
+        TowerBlockModule
 
     ]
 })

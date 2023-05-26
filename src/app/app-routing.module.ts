@@ -12,6 +12,9 @@ const routes: Routes = [
     },
     {
       path: 'tower-block', loadChildren: () => import('./tower-block/tower-block.module').then(m=>m.TowerBlockModule)
+    },
+    {
+      path: 'chart', loadChildren: () => import('./chart-js/chart-js.module').then(m=>m.ChartJsModule)
     }
    
 ];
