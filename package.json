@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "@tweenjs/tween.js": "^20.0.3",
     "angular-turnjs": "^1.0.4",
     "cannon": "^0.6.2",
     "chart.js": "^4.3.0",
@@ -29,6 +30,7 @@
     "three": "^0.152.2",
     "tslib": "^2.3.0",
     "turn.js": "^1.0.5",
+    "tween": "^0.9.0",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {

@@ -27,6 +27,7 @@ import { TowerBlockComponent } from './tower-block/tower-block.component';
 import { ChartJsComponent } from './chart-js/chart-js.component';
 import { ChartJsModule } from './chart-js/chart-js.module';
 import { TowerBlockModule } from './tower-block/tower-block.module';
+import { TerrainComponent } from './terrain/terrain.component';
 
 
 
@@ -39,6 +40,7 @@ import { TowerBlockModule } from './tower-block/tower-block.module';
         SpinnerComponent,
         NavbarComponent,
         CustomComponentsComponent,
+        TerrainComponent,
         
      
 

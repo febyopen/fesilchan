@@ -15,6 +15,9 @@ const routes: Routes = [
     },
     {
       path: 'chart', loadChildren: () => import('./chart-js/chart-js.module').then(m=>m.ChartJsModule)
+    },
+    {
+      path: 'terrain', loadChildren: () => import('./terrain/terrain.module').then(m=>m.TerrainModule)
     }
    
 ];
